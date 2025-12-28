@@ -22,7 +22,7 @@ jobs:
           ./scripts/packaging/appimage/build-appimage.sh
       - name: Upload AppImage
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: appimage
           path: dist/appimage/*.AppImage
